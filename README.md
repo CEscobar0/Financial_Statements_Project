@@ -1,4 +1,4 @@
-![Banner](.\workflow\soportes\banner.webp)
+![Banner](./workflow/soportes/banner.webp)
 # Income Statement Project
 
 ## Índice
