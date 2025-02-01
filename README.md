@@ -1,4 +1,4 @@
-![Banner](sql-for-finance-income-statement-project-4477127\workflow\soportes\banner.webp)
+![Banner](.\workflow\soportes\banner.webp)
 # Income Statement Project
 
 ## Índice
@@ -81,36 +81,36 @@ FROM account_retained_earnings_details;
 
 Para construir el balance general, se utilizan varias vistas materializadas que representan diferentes secciones del balance:
 
-- **Section Assets**: Representa los activos de la empresa. [Consulta SQL](./sql-for-finance-income-statement-project-4477127/workflow/section_assets.sql)
-- **Section Liabilities**: Representa los pasivos de la empresa. [Consulta SQL](./sql-for-finance-income-statement-project-4477127/workflow/section_liabilities.sql)
-- **Section Owners Equity**: Representa el patrimonio de los propietarios. [Consulta SQL](./sql-for-finance-income-statement-project-4477127/workflow/section_owners_equity.sql)
+- **Section Assets**: Representa los activos de la empresa. [Consulta SQL](./workflow/section_assets.sql)
+- **Section Liabilities**: Representa los pasivos de la empresa. [Consulta SQL](./workflow/section_liabiliies.sql)
+- **Section Owners Equity**: Representa el patrimonio de los propietarios. [Consulta SQL](./workflow/section_owners_equity.sql)
 
 ### Cuentas Utilizadas
 
 Las siguientes consultas SQL crean las vistas materializadas para las cuentas utilizadas en las secciones del balance general y el estado de resultados:
 
-- **Account Cash**: Representa el efectivo de la empresa. Esta cuenta es crucial para entender la liquidez inmediata de la empresa, es decir, su capacidad para cumplir con obligaciones a corto plazo. [Consulta SQL](./sql-for-finance-income-statement-project-4477127/workflow/cash_account.sql)
-- **Account Accounts Receivable**: Representa las cuentas por cobrar. Esta cuenta muestra el dinero que se espera recibir de los clientes, lo cual es esencial para la gestión del flujo de caja y la planificación financiera. [Consulta SQL](./sql-for-finance-income-statement-project-4477127/workflow/accounts_receivable.sql)
-- **Account Inventory**: Representa el inventario de la empresa. El inventario es un activo importante que puede convertirse en efectivo a través de ventas futuras. Su gestión eficiente es clave para la rentabilidad. [Consulta SQL](./sql-for-finance-income-statement-project-4477127/workflow/account_inventory.sql)
-- **Account Property and Equipment**: Representa la propiedad y el equipo. Estos son activos a largo plazo que la empresa utiliza para sus operaciones. La depreciación de estos activos también se considera para reflejar su valor real a lo largo del tiempo. [Consulta SQL](./sql-for-finance-income-statement-project-4477127/workflow/account_property_equipment.sql)
-- **Account Loan**: Representa los préstamos de la empresa. Esta cuenta es importante para entender las obligaciones de deuda de la empresa y su impacto en la liquidez y solvencia. [Consulta SQL](./sql-for-finance-income-statement-project-4477127/workflow/account_loan.sql)
-- **Account Retained Earnings Details**: Detalles de las ganancias retenidas. Esta cuenta muestra las ganancias acumuladas que no se han distribuido como dividendos y se reinvierten en la empresa. Es un indicador clave de la salud financiera a largo plazo. [Consulta SQL](./sql-for-finance-income-statement-project-4477127/workflow/account_retained_earnings_details.sql)
+- **Account Cash**: Representa el efectivo de la empresa. Esta cuenta es crucial para entender la liquidez inmediata de la empresa, es decir, su capacidad para cumplir con obligaciones a corto plazo. [Consulta SQL](./workflow/cash_account.sql)
+- **Account Accounts Receivable**: Representa las cuentas por cobrar. Esta cuenta muestra el dinero que se espera recibir de los clientes, lo cual es esencial para la gestión del flujo de caja y la planificación financiera. [Consulta SQL](./workflow/accounts_receivable.sql)
+- **Account Inventory**: Representa el inventario de la empresa. El inventario es un activo importante que puede convertirse en efectivo a través de ventas futuras. Su gestión eficiente es clave para la rentabilidad. [Consulta SQL](./workflow/account_inventory.sql)
+- **Account Property and Equipment**: Representa la propiedad y el equipo. Estos son activos a largo plazo que la empresa utiliza para sus operaciones. La depreciación de estos activos también se considera para reflejar su valor real a lo largo del tiempo. [Consulta SQL](./workflow/account_property_equipment.sql)
+- **Account Loan**: Representa los préstamos de la empresa. Esta cuenta es importante para entender las obligaciones de deuda de la empresa y su impacto en la liquidez y solvencia. [Consulta SQL](./workflow/account_loan.sql)
+- **Account Retained Earnings Details**: Detalles de las ganancias retenidas. Esta cuenta muestra las ganancias acumuladas que no se han distribuido como dividendos y se reinvierten en la empresa. Es un indicador clave de la salud financiera a largo plazo. [Consulta SQL](./workflow/account_retained_earnings_details.sql)
 
 ## Capturas de Pantalla
 
 Aquí tienes algunas capturas de pantalla de las vistas materializadas:
 
-![Balance General](./sql-for-finance-income-statement-project-4477127/workflow/soportes/MATERIALIZED_VIEW_balance_sheet.png)
+![Balance General](./workflow/soportes/MATERIALIZED_VIEW_balance_sheet.png)
 *Figura 1: Balance General generado por el proyecto.*
 
-![Estado de Resultados](./sql-for-finance-income-statement-project-4477127/workflow/soportes/MATERIALIZED_VIEW_income_statement.png)
+![Estado de Resultados](./workflow/soportes/MATERIALIZED_VIEW_income_statement.png)
 *Figura 2: Estado de Resultados generado por el proyecto.*
 
 ## Diagrama del Flujo de Trabajo
 
 A continuación, se muestra un diagrama que ilustra el flujo de trabajo del proyecto:
 
-![Flujo de Trabajo](./sql-for-finance-income-statement-project-4477127/workflow/soportes/Proceso%20de%20Generación%20de%20Informes%20Financieros.png)
+![Flujo de Trabajo](./workflow/soportes/Proceso%20de%20Generación%20de%20Informes%20Financieros.png)
 *Figura 3: Diagrama del flujo de trabajo del proyecto.*
 
 ## Consideraciones Adicionales
@@ -129,7 +129,7 @@ A continuación, se presentan algunas consideraciones importantes sobre el mante
     - **Crecimiento de los Ingresos**: Indica el aumento porcentual de los ingresos en un período determinado. [Más información](https://www.investopedia.com/terms/r/revenuegrowthrate.asp)
     - **Retorno sobre Ventas (ROS)**: Mide la eficiencia con la que la empresa convierte las ventas en ganancias. [Más información](https://www.investopedia.com/terms/r/returnonsales.asp)
 
-Para más detalles, puedes consultar el archivo [Notes.md](./sql-for-finance-income-statement-project-4477127/workflow/Notes.md), el cual presenta un transcrito de las consideraciones finales del curso SQL for Finance: Income Statement Project impartido por Gabriela Baldivia Soncini.
+Para más detalles, puedes consultar el archivo [Notes.md](./workflow/Notes.md), el cual presenta un transcrito de las consideraciones finales del curso SQL for Finance: Income Statement Project impartido por Gabriela Baldivia Soncini.
 
 ## Conclusión
 
@@ -145,7 +145,7 @@ Para ejecutar este proyecto, sigue estos pasos:
 
 1. **Requisitos previos**:
    - Instala PostgreSQL desde [aquí](https://www.postgresql.org/download/).
-   - Crea una base de datos y ejecuta el script [setup-postgresql.sql](./sql-for-finance-income-statement-project-4477127/.devcontainer/setup-postgresql.sql) para crear las tablas necesarias.
+   - Crea una base de datos y ejecuta el script [setup-postgresql.sql](./.devcontainer/setup-postgresql.sql) para crear las tablas necesarias.
 
 2. **Ejecutar las consultas SQL**:
    - Copia y pega las consultas SQL proporcionadas en este README en tu herramienta de gestión de bases de datos (por ejemplo, pgAdmin o psql).
@@ -173,7 +173,7 @@ Este proyecto es un fork de los materiales proporcionados como parte de un curso
    - Cualquier modificación o contribución que hagas a este proyecto se licencia bajo los términos de la **Licencia BSD 2-Clause**.
 
 4. **Atribuciones**:
-   - Este proyecto utiliza la biblioteca **psycopg2**, que está licenciada bajo la **GNU Lesser General Public License (LGPL)**. Puedes encontrar más información sobre esta licencia en el archivo [Notice](./sql-for-finance-income-statement-project-4477127/NOTICE).
+   - Este proyecto utiliza la biblioteca **psycopg2**, que está licenciada bajo la **GNU Lesser General Public License (LGPL)**. Puedes encontrar más información sobre esta licencia en el archivo [Notice](./NOTICE).
 
 ### Licencia BSD 2-Clause
 
@@ -184,14 +184,14 @@ El código modificado y las contribuciones realizadas en este proyecto están li
 
 ## Aviso Legal
 
-Este proyecto es un fork de materiales proporcionados por LinkedIn Learning. No estoy afiliado a LinkedIn Corporation, y este proyecto es solo una demostración de mis habilidades técnicas. Para más detalles sobre los términos de uso, consulta el archivo [License](./sql-for-finance-income-statement-project-4477127/LICENSE). 
+Este proyecto es un fork de materiales proporcionados por LinkedIn Learning. No estoy afiliado a LinkedIn Corporation, y este proyecto es solo una demostración de mis habilidades técnicas. Para más detalles sobre los términos de uso, consulta el archivo [License](./LICENSE). 
 
 *La imagen presentada al inicio es generada con inteligencia artificial.*
 
 ### Enlaces relevantes
 
-- [Licencia de LinkedIn Learning](./sql-for-finance-income-statement-project-4477127/LICENSE)
-- [Aviso de licencia de psycopg2](./sql-for-finance-income-statement-project-4477127/NOTICE)
+- [Licencia de LinkedIn Learning](./LICENSE)
+- [Aviso de licencia de psycopg2](./NOTICE)
 - [Licencia BSD 2-Clause](https://opensource.org/licenses/BSD-2-Clause)
 - [SQL for Finance: Income Statement Project](https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fsql-for-finance-income-statement-project%3Ftrk%3Dshare_ent_url%26shareId%3DamGUtib2Sam1uiEcGqiYSg%253D%253D) (Curso consultado)
 - [Gabriela Baldivia Soncini](https://www.linkedin.com/in/gbaldiviasoncini) (Instructora del curso)
